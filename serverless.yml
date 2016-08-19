@@ -37,4 +37,16 @@ functions:
       - http:
           path: norris_quote
           method: get
+  messengerSubscribeHook:
+    handler: handler.handleMessengerSubscribeHook
+    events:
+      - http:
+          path: messenger/hook
+          method: get
+  messengerHook:
+    handler: handler.handleMessengerHook
+    events:
+      - http:
+          path: messenger/hook
+          method: post
 
